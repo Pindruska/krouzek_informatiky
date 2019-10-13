@@ -1,10 +1,8 @@
 #Zopakuj si, co jsme se naučili
 
-Přihlaš se ke svému účtu na scratch.mit.edu
-Založ si nový projekt, nezapomeň ho pojmenovat
-Napiš nějaké krátké slovo z různých písmenek
-Zadej každému z písmenek, co má dělat - měnit barvu, přejet na jiné místo, udělat nějaký zvuk, otočit se... 
-Je na tobě, jestli každé písmenko bude dělat něco jiného, nebo budou všechna na kliknutí reagovat stejně.
-Pokud si potřebuješ osvěžit paměť, jak se který příkaz dělá, mrkni se ke mně do projektu: https://scratch.mit.edu/projects/322033732/
-
-Pokud se mi budeš chtít pochlubit svým výtvorem, pošli mi na něj odkaz (nezapomeň se ujistit, že máš projekt "veřejný", jinak se na něj nebudu moct podívat)
+Pracujeme ve webové aplikaci na adrese scratch.mit.edu. Z důvodu možnosti ukládání rozpracovaných projektů je lepší mít vlastní účet. 
+V První lekci si někteří už účet založili. Pak jsme zkoumali prostředí, příkazy a rozpohybovali kocourka, aby běhal za myší. Zkuste si to doma sami. Můžete se podívat na tento link, je tam uložené to, co jste měli včera zvládnout. Podívejte se, jak to funguje. Když kliknete na „pohlédnout dovnitř“ najdete tam můj kód. Odkaz na projekt z lekce 1: bit.ly/2ASb4rV
+Zkuste doma přijít na to:
+•	Jak se mění postavičky?
+•	Jak se nastavuje pozadí?
+•	Jak udělat, aby kocourek po tom, co doběhne myš, se netočil dokola, ale zastavil se a čekal na další pohyb?
