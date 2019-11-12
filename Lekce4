@@ -1,0 +1,64 @@
+Cílem lekce je seznámit žáky s proměnnými: jak se vytvářejí, pojmenovávají, základy práce s nimi
+Vytvoří si hru, ve které budou po určitý limit klikat na předmět, který bude měnit polohu. Za každý klik dostanou bod.
+
+Máme otevřené prostředí Scratch na stránkách sratch.mit.edu a dali jsme Tvořit (nový projekt).
+
+Pokyny pro žáky:
+1. Vyber si předmět a pozadí, tak, aby k sobě alespoň trochu pasovaly a aby předmět byl viditelný. 
+   Pokud jsi rychle hotový, můžeš si vybrat i zvuk (záložka Zvuky) , který bude předmět vydávat, když se na něj klikne. Měl by být krátký.
+
+2. Jak rozpohybujeme přemět? Chceme, aby se po tom, co na něj klikneme, přesunul na jinou, náhodnou pozici.
+   Budeš potřebovat blok "Po kliknutí na mě" a "skoč na náhodná pozice".
+
+Volitelné: Jak spojíme zvuk s předmětem? 
+K bloku "Po kliknutí na mě" přidej ze skupiny "ZVUK" blok "začni hrát zvuk ..." a nezapomeň tam změnit zvuk na ten, který sis předtím vybral.
+
+3. Vytvoření první proměnné. Co to je a k čemu to slouží??
+   Teď musíme programu říct, aby nám počítal body za kliknutí. Ty bude ukládat do takového šuplíčku. 
+   Nazývá se PROMĚNNÁ ,protože se bude často "otevírat" a měnit. Přejdeme do skupiny bloků "Proměnné" - má tmavě oranžovou barvu. 
+   Nejprve si proměnnou vytvoříme a pojmenujeme. Jméno by mělo jasně říkat, co se v tom šuplíčku ukrývá. 
+   Protože my chceme do proměnné ukládat body, můžeme ji nazvat třeba "body" nebo "score".
+   Po vytvoření se nám proměnná ukáže v levém horním rohu hry. Pokud bychom ji tam nechtěli, zrušíme zaškrtnutí ve skupině "Proměnné".
+
+4. Proměnnou máme, ale jak ji teď propojit s předmětem, aby nám po kliknutí přibývaly body?
+   Děje se to po kliknutí, takže pořád napojujeme na bloky, které už tam máme. 
+   Ve skupině bloků "Proměnné" máme  různé příkazy. Který se hodí? Co třeba "změň /název proměnné/ o /číslo/"? 
+   Název proměnné změníme pomocí trojúhelníčku, číslo by mělo být 1 (chceme, aby nám za každé kliknutí přibyl jeden bod).
+
+Určitě sis zkusil, že po každém kliknutí ti nabíhají body. Jak je ale na začátku hry vynulovat? 
+(nápověda: hra začíná stisknutím zeleného praporku)
+
+5. Vynulování proměnné na začátku hry:
+   Budeme potřebovat nový blok, a to "po kliknutí na zelený praporek". A co k němu přidáme, aby nám u proměnné "body" naskočila 0?
+   Mrkni do skupiny bloků "Proměnné". Najdeš tam blok "nastav /název proměnné/ na /číslo/". Ten použijeme.
+   Připoj ho k bloku "po kliknutí na zelený praporek". Proměnná bude ta, do které ukládáme body a číslo musí být 0.
+   Vyzkoušej si, že to funguje. Klikej na předmět a pak klikni na zelený praporek. Máš 0 bodů? Super!!
+
+6. Další proměnná? Ano, musíme nějak odpočítávat čas!
+   Vytvoř si další proměnnou. Doporučuji ji nazvat "čas", nebo "odpočet" - bude nám totiž sloužit jako "časovač".
+   Protože nám čas musí začít odpočítávat hned po začátku hry, navážeme si ho na bloky pod "po kliknutí na zelený praporek".
+   Už bys mohl vědět, jak na to. Budeš opět potřebovat blok "nastav /název proměnné/ na /číslo/". 
+   Název proměnné je "čas" a číslo bude počet sekund, doporučuji dát na začátek 15 nebo 20.
+
+7. Vytvoření časovače:
+   Budeš potřebovat bloky "změň /název proměnné/ o /číslo/" (bloky Proměnné) a "čekej 1 sekund" (bloky Ovládání).
+   Název proměnné je "čas" a číslo musí být "-1" (mínus jedna) - protože chceme, aby nám to čas odečítalo, ne přičítalo.
+   Připoj tyto dva bloky k sobě.
+   
+8. Jak spustit odpočet:
+   Protože chceme, aby nám to program opakoval, dokud nedojde čas (nebude čas = 0), budeme ještě ze skupiny Ovládání potřebovat
+   blok "opakuj, dokud nenastane /.../" - je to taková vidlička, do které my zasuneme tu dvojici "změň čas o -1" a "čekej 1 sekund".
+   Ale tím jsme ještě neskončili, musíme říct, co má nastat, aby se mohl odpočet zastavit. K tomu potřebujeme tu proměnnou a 
+   blok ze skupiny "Operátory" (zelená skupina).
+   Proměnnou "čas" si přesuneš ze skupiny "Proměnné" (je to takový tmavě oranžový oválek).
+   Z operátorů budeš potřebovat ten šestiúhelník, kde je prázdné místo, pak "=" a pak číslo.
+   Do prázdného místa vlož oranžový oválek "čas" a číslo změň na 0.
+   Toto celé pak připni k blokům pod "po kliknutí na zelený praporek".
+
+A hra je skoro hotová. Mrkni sem, co jsme vše stihli: https://scratch.mit.edu/projects/343825440/
+
+Ještě musíme hráči oznámit, když vyprší čas a znemožnit mu sbírat body po uplynutí limitu. Zkus na to přijít. 
+Budou se ti hodit bloky "Když /.../ tak ..." (Ovládání), operátor s "=" a také bloky s bublinou a nějakým pěkným zvukem.
+Můžeš se podívat, jak jsem si s tím poradila já: https://scratch.mit.edu/projects/343825440/
+Co mi ještě zbývá dořešit? :-)
+
